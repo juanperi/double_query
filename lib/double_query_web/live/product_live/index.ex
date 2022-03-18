@@ -42,5 +42,6 @@ defmodule DoubleQueryWeb.ProductLive.Index do
 
   defp list_products do
     Products.list_products()
+    |> IO.inspect(label: "Super expensive query to list products")
   end
 end
